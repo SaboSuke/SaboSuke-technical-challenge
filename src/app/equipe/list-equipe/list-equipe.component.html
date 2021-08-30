@@ -1,0 +1,15 @@
+<section>
+    <div class="split">
+        <div class="wrap">
+            <h1>List Equipe</h1>
+            <div class="card" *ngFor="let e of equipe.result">
+                <p>{{e.e_label}}</p>
+                <p>{{e.e_entraineur}}</p>
+            </div>
+        </div>
+        <div class="bracket">
+            <h1>Match Bracket</h1>
+            <app-match-bracket></app-match-bracket>
+        </div>
+    </div>
+</section>

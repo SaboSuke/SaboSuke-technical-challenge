@@ -1,0 +1,8 @@
+<section>
+    <div class="wrap">
+        <div class="card" *ngFor="let j of unAssignedJoueur">
+            <p>{{j.j_nom}}</p>
+            <a class="btn" (click)="toAssign(j.j_id)">Assign equipe</a>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,10 @@
+<section>
+    <div class="back" (click)="back()">go back</div>
+    <div class="wrap">
+        <div class="card" *ngFor="let e of equipe.result">
+            <p>{{e.e_label}}</p>
+            <p>{{e.e_entraineur}}</p>
+            <a class="btn" (click)="assignEquipe(e.e_id)">Choose this</a>
+        </div>
+    </div>
+</section>
